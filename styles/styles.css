@@ -1,0 +1,110 @@
+/*
+blue #080939
+off-white #FCF9F9
+lime green #88D317
+dark grey #535353
+black
+
+*/
+*,::before,::after {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+div, h1, h2, h3, h4, h5, h6,
+p, main, nav {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #FCF9F9;
+  font-size: 1em;
+  width: 100vw;
+}
+p{
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+main{
+  margin-top: 15vmin;
+  width: 80%;
+  margin-left: 10%;;
+  background-color: #FCF9F9;
+  display: inline-block;
+}
+
+nav{
+  height: 15vmin;
+  width: 100%;
+  background-color: #080939;
+  color: #88D317;
+  position: fixed;
+}
+i:before{
+  font-family: FontAwesome;
+}
+h1{
+  font-size: 3.5em;
+}
+.pitch{
+  width: 100%;
+  display: inline-block;
+  margin-top: 5%;
+}
+.view{
+  margin-top: 3%;
+  width: 100%;
+  height: 35vw;
+  border: 5px solid #080939;
+  border-radius: 10px;
+  text-align: center;
+}
+.categories{
+  width: 100%;
+  margin-top: 2%;
+  height: 10vw;
+  /*border: 1px solid black;*/
+}
+.small-view{
+  width: 20%;
+  height: 100%;
+  margin-left: 4%;
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 5px;
+}
+.view_h2{
+  text-align: center;
+  margin-top: 5%;
+}
+.skill_images{
+  width: 60%;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 2%;
+}
+.skill_images > img{
+  margin-left: 5%;
+}
+.small-view{
+  text-align: center;
+}
+.external-links{
+  display: inline-block;
+  width: 50%;
+  float: right;
+  margin-top: 1vmin;
+}
+.external-links > div {
+  width: 30%;
+  display: inline-block;
+  font-size: 1.3em;
+  line-height: 2.75em;
+}
+.slogan{
+  float: left;
+  line-height: 8em;
+  padding-left: 5%;
+}
