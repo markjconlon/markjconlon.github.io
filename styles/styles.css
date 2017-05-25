@@ -43,6 +43,9 @@ nav{
   color: #88D317;
   position: fixed;
 }
+a{
+  color: #88D317;
+}
 i:before{
   font-family: FontAwesome;
 }
@@ -84,7 +87,7 @@ h3{
 }
 .view_h2{
   text-align: center;
-  margin-top: 5%;
+  padding-bottom: 0.5em;
 }
 .skill_images{
   width: 60%;
@@ -137,9 +140,16 @@ h3{
   font-size: 2em;
   border-bottom: 3px double black;
 }
-#backbone{
-  margin: 2% 0;
-  width: 75%;
+.view_h2.directions{
+  position: relative;
+  bottom: -1.5em;
+  border-bottom: 0px;
+}
+#backbone, #angular{
+  width: 35%;
+  display: block;
+  margin: 5% auto;
+
 }
 #ruby_img{
   width: 18%;
