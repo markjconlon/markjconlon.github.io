@@ -26,6 +26,7 @@ p{
   padding: 0;
   display: inline-block;
   text-align: justify;
+  font-size: 1em;
 }
 main{
   margin-top: 15vmin;
@@ -48,6 +49,9 @@ i:before{
 h1{
   font-size: 3.5em;
 }
+h3{
+  font-size: 1.3em;
+}
 .pitch{
   width: 100%;
   display: inline-block;
@@ -62,18 +66,21 @@ h1{
   text-align: center;
 }
 .categories{
-  width: 100%;
-  margin-top: 2%;
-  height: 10vw;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  zoom: 90%;
+  margin: auto;
+  margin-top: 1em;
   /*border: 1px solid black;*/
 }
 .small-view{
   width: 20%;
-  height: 100%;
-  margin-left: 4%;
-  border: 1px solid black;
+  min-height: 6em;
+  border: 2px solid #080939;
   display: inline-block;
   border-radius: 5px;
+  padding-top: 1em;
 }
 .view_h2{
   text-align: center;
@@ -118,6 +125,7 @@ h1{
 }
 .view{
   min-height: 400px;
+  overflow-y: scroll;
 }
 .view p{
   width: 75%;
@@ -127,6 +135,7 @@ h1{
 .view h2{
   margin: 2%;
   font-size: 2em;
+  border-bottom: 3px double black;
 }
 #backbone{
   margin: 2% 0;
@@ -141,7 +150,16 @@ h1{
 }
 #placeholder{
   display: block;
+  vertical-align: middle;
 }
+#P2 img{
+  width: 50%;
+  margin-bottom: 2em;
+}
+#P2 > div{
+  width: 50%;
+}
+
 @media only screen and (max-width: 1100px) {
   .account{
     display: none;
