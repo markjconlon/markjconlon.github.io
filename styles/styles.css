@@ -1,23 +1,23 @@
 /*
-blue #080939
-off-white #FCF9F9
-lime green #88D317
-dark grey #535353
+blue steelblue
+off-white whitesmoke
+dark grey whitesmoke
 black
 */
 
 *,::before,::after {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: Verdana;
 }
 div, h1, h2, h3, h4, h5, h6,
 p, main, nav {
   margin: 0;
   padding: 0;
+  font-family: Verdana;
 }
 body{
-  background-color: #FCF9F9;
+  background-color: whitesmoke;
   font-size: 1em;
   width: 100vw;
 }
@@ -27,24 +27,30 @@ p{
   display: inline-block;
   text-align: justify;
   font-size: 1em;
+  color: steelblue;
 }
 main{
   margin-top: 15vmin;
   width: 80%;
   margin-left: 10%;;
-  background-color: #FCF9F9;
+  background-color: whitesmoke;
   display: inline-block;
 }
 
 nav{
   height: 15vmin;
   width: 100%;
-  background-color: #080939;
-  color: #88D317;
+  background-color: steelblue;
+  color: whitesmoke;
   position: fixed;
+  border-radius: 2%;
+  border-bottom: 3px solid red;
 }
 a{
-  color: #88D317;
+  color: whitesmoke;
+}
+a span {
+  font-family: Verdana;
 }
 i:before{
   font-family: FontAwesome;
@@ -64,9 +70,12 @@ h3{
   margin-top: 3%;
   width: 100%;
   height: 35vw;
-  border: 5px solid #080939;
+  border: 5px solid steelblue;
   border-radius: 10px;
   text-align: center;
+}
+.view a{
+  color: steelblue;
 }
 .categories{
   display: flex;
@@ -75,33 +84,31 @@ h3{
   zoom: 90%;
   margin: auto;
   margin-top: 1em;
-  /*border: 1px solid black;*/
 }
 .small-view{
   width: 20%;
   min-height: 6em;
-  border: 2px solid #080939;
+  border: 2px solid steelblue;
   display: inline-block;
   border-radius: 5px;
   padding-top: 1em;
+  text-align: center;
+  color: steelblue;
 }
 .view_h2{
   text-align: center;
   padding-bottom: 0.5em;
+  color: steelblue;
 }
 .skill_images{
   width: 60%;
   display: inline-block;
-  margin: 0 auto;
   position: relative;
-  margin-top: 2%;
   max-width: 600px;
+  padding-top: 3em;
 }
 .skill_images > img{
   margin-left: 5%;
-}
-.small-view{
-  text-align: center;
 }
 .external-links{
   display: inline-block;
@@ -138,12 +145,7 @@ h3{
 .view h2{
   margin: 2%;
   font-size: 2em;
-  border-bottom: 3px double black;
-}
-.view_h2.directions{
-  position: relative;
-  bottom: -1.5em;
-  border-bottom: 0px;
+  border-bottom: 3px double steelblue;
 }
 #backbone, #angular{
   width: 35%;
@@ -155,21 +157,71 @@ h3{
   width: 18%;
   padding: 1%;
 }
-#P1, #P2, #P3, #P4{
+#P1, #P2, #P4{
   display: none;
 }
-#placeholder{
+#P3{
   display: block;
   vertical-align: middle;
 }
-#P2 img{
-  width: 50%;
-  margin-bottom: 2em;
+#P2 img.hoptimal_site{
+  margin: 1em 0;
+  width: 90%;
 }
 #P2 > div{
-  width: 50%;
+  width: 80%;
+  display: inline-block;
+}
+#P2 p{
+  width: 90%;
+  margin-bottom: 1em;
+}
+#P4{
+  height: 100%;
+}
+.small-view-active{
+  color: whitesmoke;
+  background-color: steelblue;
+  border-color: red;
+}
+.display_none{
+  display: none;
+}
+/* Tic Tac Toe start*/
+#outside{
+background-color: whitesmoke;
+height: 350px;
+width: 350px;
+position: relative;
+display: block;
+margin: auto;
+margin-top: 5%;
 }
 
+#outside > div {
+  background-color: steelblue;
+  width: 30%;
+  height: 30%;
+  margin-left: 2%;
+  margin-top: 2%;
+  display: inline-block;
+}
+.x{
+  background-image: url(x.png);
+  background-size: cover;
+}
+.o{
+  background-image: url(o.png);
+  background-size: cover;
+}
+/* Tic Tac Toe end*/
+#gameResult{
+  font-size: 4em;
+  color: red;
+  position: relative;
+  z-index: 1000;
+  margin: auto;
+}
 @media only screen and (max-width: 1100px) {
   .account{
     display: none;
