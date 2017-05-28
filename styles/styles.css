@@ -151,6 +151,12 @@ h3{
   color: red;
   text-decoration: none;
 }
+a:hover{
+  color: red;
+}
+.small-view:hover{
+  background-color: grey;
+}
 #backbone, #angular{
   width: 35%;
   display: block;
