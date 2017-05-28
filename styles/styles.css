@@ -147,6 +147,10 @@ h3{
   font-size: 2em;
   border-bottom: 3px double steelblue;
 }
+.pitch a{
+  color: red;
+  text-decoration: none;
+}
 #backbone, #angular{
   width: 35%;
   display: block;
