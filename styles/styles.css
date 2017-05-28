@@ -7,7 +7,7 @@ black
 
 *,::before,::after {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 0.75em;
   font-family: Verdana;
 }
 div, h1, h2, h3, h4, h5, h6,
@@ -114,12 +114,12 @@ h3{
   display: inline-block;
   width: 50%;
   float: right;
-  margin-top: 1vmin;
+  margin-top: 0.5em;
 }
 .external-links > div {
   width: 30%;
   display: inline-block;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 2em;
 }
 .slogan{
@@ -235,17 +235,45 @@ margin-top: 5%;
     font-size: 2em;
     line-height: 2em;
     text-align: right;
+    padding-left: 2em;
   }
   .link{
     float: right;
   }
   .external-links{
     margin-right: 10%;
-    max-width: 250px;
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .external-links{
+    margin-right: 10%;
+    max-width: 40%;
+  }
+  .external-links > div {
+    width: 5%;
+    font-size: 2em;
+    line-height: 2em;
+    text-align: right;
+    padding-left: 1.5em;
+  }
+  .small-view{
+    min-height: 4em;
   }
 }
 @media only screen and (max-width: 768px) {
   .external-links{
-    display: none;
+    /*display: none;*/
+  }
+  h3{
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 565px) {
+  h3{
+    font-size: 0.8em;
+  }
+  .pitch > p{
+    font-size: 0.8em;
   }
 }
