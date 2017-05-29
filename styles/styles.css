@@ -75,7 +75,8 @@ h3{
   text-align: center;
 }
 .view a{
-  color: steelblue;
+  color: red;
+  text-decoration: none;
 }
 .categories{
   display: flex;
@@ -94,6 +95,7 @@ h3{
   padding-top: 1em;
   text-align: center;
   color: steelblue;
+  margin-bottom: 2em;
 }
 .view_h2{
   text-align: center;
@@ -157,6 +159,14 @@ a:hover{
 .small-view:hover{
   background-color: grey;
 }
+.small-view-active{
+  color: whitesmoke;
+  background-color: steelblue;
+  border-color: red;
+}
+.display_none{
+  display: none;
+}
 #backbone, #angular{
   width: 35%;
   display: block;
@@ -189,14 +199,7 @@ a:hover{
 #P4{
   height: 100%;
 }
-.small-view-active{
-  color: whitesmoke;
-  background-color: steelblue;
-  border-color: red;
-}
-.display_none{
-  display: none;
-}
+
 /* Tic Tac Toe start*/
 #outside{
 background-color: whitesmoke;
