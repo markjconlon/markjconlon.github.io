@@ -61,9 +61,10 @@ h1{
 h3{
   font-size: 1.3em;
 }
-.pitch{
+.pitch p{
   width: 100%;
   display: inline-block;
+  line-height: 1.2em;
   margin-top: 5%;
 }
 .view{
@@ -88,7 +89,7 @@ h3{
 }
 .small-view{
   width: 20%;
-  min-height: 6em;
+  min-height: 4em;
   border: 2px solid steelblue;
   display: inline-block;
   border-radius: 5px;
@@ -96,6 +97,7 @@ h3{
   text-align: center;
   color: steelblue;
   margin-bottom: 2em;
+  justify-content: center;
 }
 .view_h2{
   text-align: center;
