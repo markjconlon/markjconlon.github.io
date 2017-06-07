@@ -1,44 +1,76 @@
 $( document ).ready(function() {
 
-  $('#p1').click(function (){
-    $('#P2').css('display', 'none');
-    $('#P3').css('display', 'none');
-    $('#P4').css('display', 'none');
-    $('#P1').css('display', 'block');
-    $('#p1').addClass('small-view-active')
-    $('#p2').removeClass('small-view-active')
-    $('#p3').removeClass('small-view-active')
-    $('#p4').removeClass('small-view-active')
+  $('#p1').click(function (e){
+    let x = (window.innerWidth - e.clientX - 141);
+    let y = e.clientY;
+    $('#lightning').removeClass('display_none');
+    $('#lightning').animate({left: ("-=" + x), bottom: "-=" + y}, 500);
+    setTimeout(function(){
+      $('#P2').css('display', 'none');
+      $('#P3').css('display', 'none');
+      $('#P4').css('display', 'none');
+      $('#P1').css('display', 'block');
+      $('#p1').addClass('small-view-active');
+      $('#p2').removeClass('small-view-active');
+      $('#p3').removeClass('small-view-active');
+      $('#p4').removeClass('small-view-active');
+      $('#lightning').addClass('display_none');
+      $('#lightning').removeAttr('style');
+  }, 550 );
   });
-  $('#p2').click(function (){
-    $('#P1').css('display', 'none');
-    $('#P3').css('display', 'none');
-    $('#P4').css('display', 'none');
-    $('#P2').css('display', 'block');
-    $('#p2').addClass('small-view-active')
-    $('#p1').removeClass('small-view-active')
-    $('#p3').removeClass('small-view-active')
-    $('#p4').removeClass('small-view-active')
+  $('#p2').click(function (e){
+    let x = (window.innerWidth - e.clientX - 141);
+    let y = e.clientY;
+    $('#lightning').removeClass('display_none');
+    $('#lightning').animate({left: ("-=" + x), bottom: "-=" + y}, 500);
+    setTimeout(function(){
+      $('#P1').css('display', 'none');
+      $('#P3').css('display', 'none');
+      $('#P4').css('display', 'none');
+      $('#P2').css('display', 'block');
+      $('#p2').addClass('small-view-active');
+      $('#p1').removeClass('small-view-active');
+      $('#p3').removeClass('small-view-active');
+      $('#p4').removeClass('small-view-active');
+      $('#lightning').addClass('display_none');
+      $('#lightning').removeAttr('style');
+  }, 550 );
   });
-  $('#p3').click(function (){
-    $('#P2').css('display', 'none');
-    $('#P1').css('display', 'none');
-    $('#P4').css('display', 'none');
-    $('#P3').css('display', 'block');
-    $('#p3').addClass('small-view-active')
-    $('#p2').removeClass('small-view-active')
-    $('#p1').removeClass('small-view-active')
-    $('#p4').removeClass('small-view-active')
+  $('#p3').click(function (e){
+    let x = (window.innerWidth - e.clientX - 141);
+    let y = e.clientY;
+    $('#lightning').removeClass('display_none');
+    $('#lightning').animate({left: ("-=" + x), bottom: "-=" + y}, 500);
+    setTimeout(function(){
+      $('#P2').css('display', 'none');
+      $('#P1').css('display', 'none');
+      $('#P4').css('display', 'none');
+      $('#P3').css('display', 'block');
+      $('#p3').addClass('small-view-active');
+      $('#p2').removeClass('small-view-active');
+      $('#p1').removeClass('small-view-active');
+      $('#p4').removeClass('small-view-active');
+      $('#lightning').addClass('display_none');
+      $('#lightning').removeAttr('style');
+  }, 550 );
   });
-  $('#p4').click(function (){
-    $('#P2').css('display', 'none');
-    $('#P3').css('display', 'none');
-    $('#P1').css('display', 'none');
-    $('#P4').css('display', 'block');
-    $('#p4').addClass('small-view-active')
-    $('#p2').removeClass('small-view-active')
-    $('#p3').removeClass('small-view-active')
-    $('#p1').removeClass('small-view-active')
+  $('#p4').click(function (e){
+    let x = (window.innerWidth - e.clientX - 141);
+    let y = e.clientY;
+    $('#lightning').removeClass('display_none');
+    $('#lightning').animate({left: ("-=" + x), bottom: "-=" + y}, 500);
+    setTimeout(function(){
+      $('#P2').css('display', 'none');
+      $('#P3').css('display', 'none');
+      $('#P1').css('display', 'none');
+      $('#P4').css('display', 'block');
+      $('#p4').addClass('small-view-active');
+      $('#p2').removeClass('small-view-active');
+      $('#p3').removeClass('small-view-active');
+      $('#p1').removeClass('small-view-active');
+      $('#lightning').addClass('display_none');
+      $('#lightning').removeAttr('style');
+  }, 550 );
   });
 
 var count = 0;

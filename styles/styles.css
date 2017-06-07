@@ -160,6 +160,7 @@ a:hover{
 }
 .small-view:hover{
   background-color: grey;
+  color: whitesmoke;
 }
 .small-view-active{
   color: whitesmoke;
@@ -168,6 +169,13 @@ a:hover{
 }
 .display_none{
   display: none;
+}
+#lightning{
+  position: absolute;
+  right: 0;
+  z-index: 50;
+  width: 200px;
+  height: 200px;
 }
 #backbone, #angular{
   width: 35%;
