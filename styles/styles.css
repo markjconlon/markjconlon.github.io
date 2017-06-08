@@ -45,6 +45,11 @@ nav{
   position: fixed;
   border-radius: 2%;
   border-bottom: 3px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3.5em;
 }
 a{
   color: whitesmoke;
@@ -54,9 +59,6 @@ a span {
 }
 i:before{
   font-family: FontAwesome;
-}
-h1{
-  font-size: 3.5em;
 }
 h3{
   font-size: 1.3em;
@@ -114,22 +116,11 @@ h3{
 .skill_images > img{
   margin-left: 5%;
 }
-.external-links{
-  display: inline-block;
-  width: 50%;
-  float: right;
-  margin-top: 0.5em;
-}
-.external-links > div {
-  width: 30%;
-  display: inline-block;
-  font-size: 1.2em;
-  line-height: 2em;
+.link{
+  display: flex;
 }
 .slogan{
-  float: left;
-  line-height: 6em;
-  padding-left: 5%;
+  display: flex;
 }
 .skill_images{
   margin: auto;
@@ -245,25 +236,6 @@ margin-top: 5%;
   z-index: 1000;
   margin: auto;
 }
-@media only screen and (max-width: 1100px) {
-  .account{
-    display: none;
-  }
-  .external-links > div {
-    width: 10%;
-    font-size: 2em;
-    line-height: 2em;
-    text-align: right;
-    padding-left: 2em;
-  }
-  .link{
-    float: right;
-  }
-  .external-links{
-    margin-right: 10%;
-    max-width: 50%;
-  }
-}
 @media only screen and (max-width: 900px) {
   .external-links{
     margin-right: 10%;
@@ -281,8 +253,8 @@ margin-top: 5%;
   }
 }
 @media only screen and (max-width: 768px) {
-  .external-links{
-    /*display: none;*/
+  nav{
+    font-size: 2.5em;
   }
   h3{
     font-size: 1em;
@@ -290,9 +262,14 @@ margin-top: 5%;
 }
 @media only screen and (max-width: 565px) {
   h3{
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .pitch > p{
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 450px) {
+  h3{
     font-size: 0.8em;
   }
 }
