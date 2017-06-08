@@ -1,6 +1,9 @@
 $( document ).ready(function() {
 
   $('#p1').click(function (e){
+    $('body').css('background-color', 'black');
+    $('main').css('background-color', 'black');
+    $('nav').css('background-color', 'black');
     let x = (window.innerWidth - e.clientX - 141);
     let y = e.clientY;
     $('#lightning').removeClass('display_none');
@@ -16,9 +19,15 @@ $( document ).ready(function() {
       $('#p4').removeClass('small-view-active');
       $('#lightning').addClass('display_none');
       $('#lightning').removeAttr('style');
+      $('body').css('background-color', 'whitesmoke');
+      $('main').css('background-color', 'whitesmoke');
+      $('nav').css('background-color', 'steelblue');
   }, 550 );
   });
   $('#p2').click(function (e){
+    $('body').css('background-color', 'black');
+    $('main').css('background-color', 'black');
+    $('nav').css('background-color', 'black');
     let x = (window.innerWidth - e.clientX - 141);
     let y = e.clientY;
     $('#lightning').removeClass('display_none');
@@ -34,9 +43,15 @@ $( document ).ready(function() {
       $('#p4').removeClass('small-view-active');
       $('#lightning').addClass('display_none');
       $('#lightning').removeAttr('style');
+      $('body').css('background-color', 'whitesmoke');
+      $('main').css('background-color', 'whitesmoke');
+      $('nav').css('background-color', 'steelblue');
   }, 550 );
   });
   $('#p3').click(function (e){
+    $('body').css('background-color', 'black');
+    $('main').css('background-color', 'black');
+    $('nav').css('background-color', 'black');
     let x = (window.innerWidth - e.clientX - 141);
     let y = e.clientY;
     $('#lightning').removeClass('display_none');
@@ -52,9 +67,15 @@ $( document ).ready(function() {
       $('#p4').removeClass('small-view-active');
       $('#lightning').addClass('display_none');
       $('#lightning').removeAttr('style');
+      $('body').css('background-color', 'whitesmoke');
+      $('main').css('background-color', 'whitesmoke');
+      $('nav').css('background-color', 'steelblue');
   }, 550 );
   });
   $('#p4').click(function (e){
+    $('body').css('background-color', 'black');
+    $('main').css('background-color', 'black');
+    $('nav').css('background-color', 'black');
     let x = (window.innerWidth - e.clientX - 141);
     let y = e.clientY;
     $('#lightning').removeClass('display_none');
@@ -70,6 +91,9 @@ $( document ).ready(function() {
       $('#p1').removeClass('small-view-active');
       $('#lightning').addClass('display_none');
       $('#lightning').removeAttr('style');
+      $('body').css('background-color', 'whitesmoke');
+      $('main').css('background-color', 'whitesmoke');
+      $('nav').css('background-color', 'steelblue');
   }, 550 );
   });
 
