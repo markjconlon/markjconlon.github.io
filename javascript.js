@@ -31,7 +31,7 @@ $( document ).ready(function() {
     let x = (window.innerWidth - e.clientX - 141);
     let y = e.clientY;
     $('#lightning').removeClass('display_none');
-    $('#lightning').animate({left: ("-=" + x), bottom: "-=" + y}, 500);
+    $('#lightning').animate({left: ("-=" + x), bottom: "-=" + y}, 200);
     setTimeout(function(){
       $('#P1').css('display', 'none');
       $('#P3').css('display', 'none');
@@ -46,7 +46,7 @@ $( document ).ready(function() {
       $('body').css('background-color', 'whitesmoke');
       $('main').css('background-color', 'whitesmoke');
       $('nav').css('background-color', 'steelblue');
-  }, 550 );
+  }, 250 );
   });
   $('#p3').click(function (e){
     $('body').css('background-color', 'black');
@@ -55,7 +55,7 @@ $( document ).ready(function() {
     let x = (window.innerWidth - e.clientX - 141);
     let y = e.clientY;
     $('#lightning').removeClass('display_none');
-    $('#lightning').animate({left: ("-=" + x), bottom: "-=" + y}, 500);
+    $('#lightning').animate({left: ("-=" + x), bottom: "-=" + y}, 200);
     setTimeout(function(){
       $('#P2').css('display', 'none');
       $('#P1').css('display', 'none');
@@ -70,7 +70,7 @@ $( document ).ready(function() {
       $('body').css('background-color', 'whitesmoke');
       $('main').css('background-color', 'whitesmoke');
       $('nav').css('background-color', 'steelblue');
-  }, 550 );
+  }, 250 );
   });
   $('#p4').click(function (e){
     $('body').css('background-color', 'black');
@@ -79,7 +79,7 @@ $( document ).ready(function() {
     let x = (window.innerWidth - e.clientX - 141);
     let y = e.clientY;
     $('#lightning').removeClass('display_none');
-    $('#lightning').animate({left: ("-=" + x), bottom: "-=" + y}, 500);
+    $('#lightning').animate({left: ("-=" + x), bottom: "-=" + y}, 200);
     setTimeout(function(){
       $('#P2').css('display', 'none');
       $('#P3').css('display', 'none');
@@ -94,7 +94,7 @@ $( document ).ready(function() {
       $('body').css('background-color', 'whitesmoke');
       $('main').css('background-color', 'whitesmoke');
       $('nav').css('background-color', 'steelblue');
-  }, 550 );
+  }, 250 );
   });
 
 var count = 0;
