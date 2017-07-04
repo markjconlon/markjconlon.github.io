@@ -123,7 +123,6 @@ a{
   width: 24%;
 }
 .skills img:hover{
-  cursor: default;
   transform: rotate(360deg);
   transition: all 0.5s ease-in-out 0s;
   cursor: pointer;, cursor: hand;
@@ -157,4 +156,8 @@ a{
   color: #777777;
   font-weight: 600;
   transform: scaleX(2.5);
+}
+#scrollToTop:hover{
+  transform: scale(2.5);
+  cursor: pointer;, cursor: hand;
 }
