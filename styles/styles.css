@@ -1,275 +1,160 @@
-/*
-blue steelblue
-off-white whitesmoke
-dark grey whitesmoke
-black
-*/
-
-*,::before,::after {
-  box-sizing: border-box;
-  font-size: 0.75em;
-  font-family: Verdana;
-}
-div, h1, h2, h3, h4, h5, h6,
-p, main, nav {
-  margin: 0;
-  padding: 0;
-  font-family: Verdana;
-}
-body{
-  background-color: whitesmoke;
-  font-size: 1em;
-  width: 100vw;
-}
-p{
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  text-align: justify;
-  font-size: 1.25em;
-  color: steelblue;
-}
-main{
-  margin-top: 15vmin;
-  width: 80%;
-  margin-left: 10%;;
-  background-color: whitesmoke;
-  display: inline-block;
-}
-
-nav{
-  height: 15vmin;
-  width: 100%;
-  background-color: steelblue;
-  color: whitesmoke;
-  position: fixed;
-  border-radius: 2%;
-  border-bottom: 3px solid red;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 3.5em;
-}
 a{
-  color: whitesmoke;
-}
-a span {
-  font-family: Verdana;
-}
-i:before{
-  font-family: FontAwesome;
-}
-h3{
-  font-size: 1.3em;
-}
-.pitch p{
-  width: 100%;
-  display: inline-block;
-  line-height: 1.2em;
-  margin-top: 5%;
-}
-.view{
-  margin-top: 3%;
-  width: 100%;
-  height: 35vw;
-  border: 5px solid steelblue;
-  border-radius: 10px;
-  text-align: center;
-}
-.view a{
-  color: red;
   text-decoration: none;
 }
-.categories{
+.background{
+  height: 100vh;
+  width: 100vw;
+  background-image: url("background.png");
+  background-size: cover;
+}
+
+.iLinks{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid whitesmoke;
+  flex-wrap: wrap;
+}
+
+.iLinks h2{
+  color: whitesmoke;
+  font-size: 1.75em;
+  display: flex;
+  margin: 1em;
+  border: 1px solid whitesmoke;
+  border-radius: 0.1em;
+  padding: 0.2em;
+}
+.name{
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.name h1 {
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black;
+  font-size: 3em;
+  text-align: center;
+}
+.name h2 {
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black;
+  font-size: 2em;
+  text-align: center;
+}
+
+.eLinks{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 2em;
+}
+.eLinks a{
+  color: whitesmoke;
+  font-size: 3em;
+  background-color: black;
+  border-radius: 0.2em;
+}
+.eLinks a:hover{
+  transform: scale(1.5);
+}
+
+.pastProjects{
+  height: 100vh;
+  width: 100vw;
+  background: #B0C3F2;
   display: flex;
   justify-content: space-between;
-  width: 90%;
-  zoom: 90%;
-  margin: auto;
+}
+.pProjects{
+  height: 70vh;
+  width: 70vw;
+  align-self: center;
+  display: flex;
+}
+.Arrow{
+  align-self: center;
+  opacity: 0.8;
+}
+.Arrow:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.pProjectIMG{
+  width: 80vw;
+  align-self: center;
+}
+.pProjectIMG img{
+  width: 100%;
+  align-self: center;
+}
+.pProjectIMG img:hover{
+  transform: translate(1em, -1em);
+}
+.pProjectIMG p{
+  background-color: whitesmoke;
+  padding: 0.5em;
+  text-align: justify;
+  border-radius: 0.75em;
   margin-top: 1em;
-}
-.small-view{
-  width: 20%;
-  min-height: 4em;
-  border: 2px solid steelblue;
-  display: inline-block;
-  border-radius: 5px;
-  padding-top: 1em;
   text-align: center;
-  color: steelblue;
-  margin-bottom: 2em;
-  justify-content: center;
 }
-.view_h2{
-  text-align: center;
-  padding-bottom: 0.5em;
-  color: steelblue;
+.displayNone{
+  display: none;
+}
+
+.skills{
+  height: 100vh;
+  width: 100vw;
+  background: whitesmoke;
+}
+.skillsSpecfics{
+  width: 100%;
+  display: inline-flex;
 }
 .skill_images{
-  width: 60%;
-  display: inline-block;
-  position: relative;
-  max-width: 600px;
-  padding-top: 3em;
-}
-.skill_images > img{
-  margin-left: 5%;
-}
-.link{
-  display: flex;
-}
-.slogan{
-  display: flex;
-}
-.skill_images{
-  margin: auto;
+  width: 40%;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 .skill_images img{
-  width: 18%;
+  width: 24%;
 }
-.view{
-  min-height: 400px;
-  overflow-y: scroll;
+.skills img:hover{
+  cursor: default;
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out 0s;
+  cursor: pointer;, cursor: hand;
 }
-.view p{
-  width: 75%;
-  margin: auto;
-  text-align: justify;
-}
-.view h2{
-  margin: 2%;
-  font-size: 2em;
-  border-bottom: 3px double steelblue;
-}
-.pitch a{
-  color: red;
-  text-decoration: none;
-}
-a:hover{
-  color: red;
-}
-.small-view:hover{
-  background-color: grey;
-  color: whitesmoke;
-}
-.small-view-active{
-  color: whitesmoke;
-  background-color: steelblue;
-  border-color: red;
-}
-.display_none{
-  display: none;
-}
-#lightning{
-  position: absolute;
-  right: 0;
-  z-index: 50;
-  width: 200px;
-  height: 200px;
-}
-#backbone, #angular{
-  width: 35%;
-  display: block;
-  margin: 5% auto;
-
-}
-#ruby_img{
-  width: 18%;
-  padding: 1%;
-}
-#P1, #P2, #P4{
-  display: none;
-}
-#P3{
-  display: block;
-  vertical-align: middle;
-}
-#P2 img.hoptimal_site{
-  margin: 1em 0;
-  width: 90%;
-}
-#P2 > div{
+.skills p{
   width: 80%;
-  display: inline-block;
+  margin-left: 10%;
+  padding-top: 8%;
+  text-align: justify;
+  color: #B0C3F2;
+  font-size: 1.2em;
 }
-#P2 p{
-  width: 90%;
-  margin-bottom: 1em;
+#skill_images_des{
+  margin-top: 5%;
+  margin-left: 4%;
+  width: 35%;
+  align-self: center;
+  padding-top: 0;
+  background-color: #B0C3F2;
+  color: #373737;
+  padding: 0.75em;
+  border-radius: 5px;
+  font-style: italic;
 }
-#P4{
-  height: 100%;
-}
-
-/* Tic Tac Toe start*/
-#outside{
-background-color: whitesmoke;
-height: 350px;
-width: 350px;
-position: relative;
-display: block;
-margin: auto;
-margin-top: 5%;
-}
-
-#outside > div {
-  background-color: steelblue;
-  width: 30%;
-  height: 30%;
-  margin-left: 2%;
-  margin-top: 2%;
-  display: inline-block;
-}
-.x{
-  background-image: url(x.png);
-  background-size: cover;
-}
-.o{
-  background-image: url(o.png);
-  background-size: cover;
-}
-/* Tic Tac Toe end*/
-#gameResult{
-  font-size: 4em;
-  color: red;
-  position: relative;
-  z-index: 1000;
-  margin: auto;
-}
-@media only screen and (max-width: 900px) {
-  .external-links{
-    margin-right: 10%;
-    max-width: 40%;
-  }
-  .external-links > div {
-    width: 5%;
-    font-size: 2em;
-    line-height: 2em;
-    text-align: right;
-    padding-left: 1.5em;
-  }
-  .small-view{
-    min-height: 4em;
-  }
-}
-@media only screen and (max-width: 768px) {
-  nav{
-    font-size: 2.5em;
-  }
-  h3{
-    font-size: 1em;
-  }
-}
-@media only screen and (max-width: 565px) {
-  h3{
-    font-size: 1em;
-  }
-  .pitch > p{
-    font-size: 1em;
-  }
-}
-@media only screen and (max-width: 450px) {
-  h3{
-    font-size: 0.8em;
-  }
+#scrollToTop{
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 100000;
+  font-size: 2.5em;
+  color: #777777;
+  font-weight: 600;
+  transform: scaleX(2.5);
 }
