@@ -1,119 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Mark | Web Developer</title>
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="images/MC.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="javascript.js"></script>
-</head>
-<body>
-  <img id="lightning" class="display_none" src="images/lightning.png" alt="">
-  <nav>
-    <div class="slogan">
-      <h1>Meet, Mark</h1>
+  <head>
+    <meta charset="utf-8">
+    <title>Mark | Web Developer</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="styles/MC.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+  </head>
+  <body>
+    <div class="background">
+      <div class="iLinks">
+        <a href="#pastProjects"><h2>Past Projects</h2></a>
+        <a href="#skills"><h2>Skills</h2></a>
+        <!-- Next 2 are coming soon! July 3rd/2017 -->
+        <!-- <a href=""><h2>Current Projects</h2></a> -->
+        <!-- <a href=""><h2>Contact</h2></a> -->
+      </div>
+      <div class="name">
+        <h1>Mark Conlon</h1>
+        <h2>Full-Stack Web Developer</h2>
+      </div>
+      <div class="eLinks">
+        <a href="mailto:markjconlon@gmail.com"><i class="fa fa-envelope" aria-hidden="true"> </i></a>
+        <a href="https://linkedin.com/in/markjconlon" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"> </i></a>
+        <a href="https://github.com/markjconlon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/markjconlon" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href="https://github.com/markjconlon/resume/blob/master/MC_Web_Dev.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a>
+        <a href="https://profiles.bitmaker.co/students/mark-conlon" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
+      </div>
     </div>
 
-    <div class="link">
-      <a href="mailto:markjconlon@gmail.com"><i class="fa fa-envelope" aria-hidden="true"> </i></a>
-    </div>
-    <div class="link">
-      <a href="https://linkedin.com/in/markjconlon" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"> </i></a>
-    </div>
-    <div class="link">
-      <a href="https://github.com/markjconlon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-    </div>
-    <div class="link">
-      <a href="https://twitter.com/markjconlon" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-    </div>
-    <div class="link">
-      <a href="https://github.com/markjconlon/resume/blob/master/MC_Web_Dev.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a>
-    </div>
-    <div class="link">
-      <a href="https://profiles.bitmaker.co/students/mark-conlon" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
-    </div>
-  </nav>
+    <div id="scrollToTop"> ^ </div>
 
-  <main>
-    <div class="pitch">
-      <p> Welcome, I'm a fullstack developer who recently graduated from Bitmaker's 9 week immersive boot camp. Seeing as you took the time to visit my site I can assume you are looking for a reason to hire a developer out of the stack of many. You should choose me if you are looking for a developer who is resilient, quickly picks up knowledge as needed and is seasoned working in a fast paced high stress environment. My strengths lay in logic and functionality. As for the dreaded weakness question, it is no secret that my weakness lays in design on the front end. However, I can make pixel perfect matches of designs. Currently I am focussing on being as comfortable in JavaScript as I am in Ruby and using that knowlede to build projects experimenting with design. The languages I know starting with the strongest are Ruby, Javascript (including jQuery), and Python. Althugh I do love rails development for its speed at which you can assemble an app, I am open to learning new Frameworks. I have included more information below as well as a game of Tic Tac Toe against the "computer" we'll say against me since I wrote it with JavaScript. I would love to hear from you via <a href="http://www.linkedin.com/in/markjconlon">LinkedIn</a> or email <a href="mailto:markjconlon@gmail.com">markjconlon@gmail.com</a>.
-      </p>
+    <div id="pastProjects" class="pastProjects">
+      <div id="lArrow" class="Arrow"><img src="styles/lArrow.png" alt=""></div>
+
+      <div id="pProjects" class="pProjects">
+        <!-- remember to add id's to javascript of any new project -->
+        <div id="pp1" class="pProjectIMG">
+          <a href="https://hoptimal.herokuapp.com/" target="_blank"><img src="styles/Hoptimal.png" alt=""></a>
+          <p>Hoptimal is a beer companion app that allows users to track and rate beers. Through ratings they
+          are given suggestions and the location of bars where they can find that beer! Built on Rails with a team of 4.</p>
+        </div >
+        <div id="pp2" class="pProjectIMG displayNone">
+          <a href="http://www.markjconlon.com/cardShuffler" target="_blank"><img src="styles/cardShuffler.png" alt=""></a>
+          <p>An application required me to write a function to shuffle a deck of cards. This is my visual solution.</p>
+        </div>
+        <div id="pp3" class="pProjectIMG displayNone">
+          <a href="http://www.markjconlon.com/tictactoe" target="_blank"><img src="styles/tictactoe.png" alt=""></a>
+          <p>The first javascript game I wrote and definitely not the last!</p>
+        </div>
+      </div>
+      <div id="rArrow" class="Arrow"><img src="styles/rArrow.png" alt=""></div>
     </div>
 
-    <div class="view">
-      <div id="P3" class="large-view">
-        <h2 class="view_h2">TECHNICAL SKILLS</h2>
-        <div class="skill_images">
-          <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/html5_filled-100.png" title="Html 5 Filled">
+    <div id="skills" class="skills">
+        <p> I'm a fullstack developer who recently graduated from Bitmaker's 9 week immersive boot camp.
+          Seeing as you took the time to visit my site I can assume you are looking for a reason to hire a developer out of the stack of many.
+          You should choose me if you are looking for a developer who is resilient, quickly picks up knowledge as needed and is seasoned working in a fast paced high stress environment.
+          My strengths lay in logic and functionality. I can make pixel perfect matches of designs.
+          Currently I am focussing on being as comfortable in JavaScript as I am in Ruby and using that knowlede to build projects experimenting with design.
+          Althugh I do love rails development for the speed at which you can assemble an app, I am open to learning new languages and frameworks.
+        </p>
+      <div class="skillsSpecfics">
+        <div id="skill_images" class="skill_images">
+          <img id="html5_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/html5_filled-100.png" title="Html 5 Filled">
           <img id="ruby_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Ecommerce/ruby_gemstone_filled-100.png" title="Ruby Gemstone Filled">
-          <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/javascript_filled-100.png" title="JavaScript Filled">
-          <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/git_filled-100.png" title="Git Filled">
-          <img src="images/CSS3.png">
-          <img id="rails_img" src="images/rails-128-black.png">
-          <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/python_filled-100.png" title="Python Filled">
-          <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Files/sql_filled-100.png" title="SQL Filled">
+          <img id="js_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/javascript_filled-100.png" title="JavaScript Filled">
+          <img id="git_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/git_filled-100.png" title="Git Filled">
+          <img id="css3_img" src="styles/CSS3.png">
+          <img id="rails_img" src="styles/rails-128-black.png">
+          <img id="python_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/python_filled-100.png" title="Python Filled">
+          <img id="sql_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Files/sql_filled-100.png" title="SQL Filled">
         </div>
-      </div>
-      <div id="P1" class="large-view">
-        <h2 class="view_h2">Current Projects</h2>
-          <p>Currently my primary focus is increasing my foundational knowledge of JavaScript. I just finished the <a href="http://www.javascript30.com">JavaScript30</a>
-            challenge which is "vanilla" javascript, no jQuery allowed! I am now focussing on front-end frameworks starting with: </p>
-          <img id="backbone" src="images/react.png" alt="">
-      </div>
-
-      <div id="P2" class="large-view">
-        <h2 class="view_h2">Past Projects</h2>
-        <div>
-          <a href="https://hoptimal.herokuapp.com/"><img class="hoptimal_site" src="images/Hoptimal.png" alt=""></a>
-          <p> If you enjoy trying new types of beer Hoptimal is for you. With hoptimal users can log all of the different kind of beers and ciders that
-            they have tried along with a rating and note. We give suggestions of beverages to try based on the users set preference (ex. IPA, Lager) as well as
-            suggestions based on their logged beers.
-          </p>
-        </div>
-      </div>
-      <div id="P4" class="large-view">
-        <div id="outside">
-          <h6 id="gameResult" class="display_none"></h6>
-          <div id="tl" value = "00">
-          </div>
-          <div id="tm" value = "01">
-          </div>
-          <div id="tr" value = "02">
-          </div>
-          <div id="ml" value = "10">
-          </div>
-          <div id="mm" value = "11">
-          </div>
-          <div id="mr" value = "12">
-          </div>
-          <div id="bl" value = "20">
-          </div>
-          <div id="bm" value = "21">
-          </div>
-          <div id="br" value = "22">
-        </div>
-      </div>
-      </div>
-
-    </div>
-
-    <div class="categories">
-      <div id="p1" class="small-view">
-        <h3>IN PROGRESS</h3>
-      </div>
-      <div id="p2" class="small-view">
-        <h3>PAST PROJECTS</h3>
-      </div>
-      <div id="p3" class="small-view small-view-active">
-        <h3>SKILLS</h3>
-      </div>
-      <div id="p4" class="small-view">
-          <h3>TIC TAC TOE</h3>
+        <p class="skill_images_des" id="skill_images_des">
+          <span id="htmlCss" class="skillDes displayNone">
+            Proficient with HTML5 and CSS3, flexbox is life! Familiar with bootstrap with rails (3.3.6) and with SASS preprocessor.
+          </span>
+          <span id="RoR" class="skillDes">
+            Ruby is a fantastic language and it also happens to be the one I'm most comfortable in. The biggest plus is Rails and its community.
+            If I could change one thing I would require parentheses for function calls, it seems strange that the interpreter looks for a variable
+            and then for a function if it can't find said variable.
+          </span>
+          <span id="javascript" class="skillDes displayNone">
+            Proficient with vanilla javascript, jQuery and AJAX. I have dabbled with ReactJS as well.
+          </span>
+          <span id="python" class="skillDes displayNone">
+            Python was the first language I came accross in an elective while at Queen's. More recently I have completed a course from U of T through Coursera.
+            I have not tried any frameworks with Python.
+          </span>
+          <span id="gitSQL" class="skillDes displayNone">
+            I use git for version control and push the majority of my work to Github. I have used PostgreSQL, SQLite3 and I am open to others!
+          </span>
+        </p>
       </div>
     </div>
-  </main>
-</body>
+  </body>
 </html>
