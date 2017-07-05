@@ -1,3 +1,6 @@
+html{
+  font-family: 
+}
 a{
   text-decoration: none;
 }
@@ -94,7 +97,7 @@ a{
   border-radius: 0.75em;
 }
 .pProjectIMG img:hover{
-  transform: translate(1em, -1em);
+  transform: translate(0, -1em);
 }
 .pProjectIMG p{
   background-color: whitesmoke;
