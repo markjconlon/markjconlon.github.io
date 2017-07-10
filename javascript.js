@@ -3,8 +3,6 @@ $( document ).ready(function() {
   var activeSkillDes = "RoR";
   var pastProjectsIndex = ["pp1", "pp2", "pp3"];
 
-  $("#skill_images > img").on("click", skillDescription);
-
   function checkScrollPosition() {
     $(window).scrollTop() > 450 ? $('#scrollToTop').fadeIn('slow') : $('#scrollToTop').fadeOut('slow');
   };
@@ -61,5 +59,6 @@ $( document ).ready(function() {
         activeSkillDes = "gitSQL";
     }
   }
-  
+  $("#skill_images > img").on("click", skillDescription);
+
 });
