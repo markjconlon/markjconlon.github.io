@@ -3,11 +3,13 @@ $( document ).ready(function() {
   var activeSkillDes = "RoR";
   var pastProjectsIndex = ["pp1", "pp2", "pp3", "pp4"];
 
-  // $("a h2").on("click", function(e){
-  //   e.preventDefault();
-  //   debugger
-  //   $("#pastProjects")[0].scrollIntoView({behaviour: "smooth"});
-  // });
+  $("a h2").on("click", function(e){
+    if (this.textContent.includes("Projects")) {
+      $("html").animate({scrollTop: $("#pastProjects").offset().top}, 500);
+    } else if (this.textContent.includes("Skills")) {
+      $("html").animate({scrollTop: $("#skills").offset().top}, 750);
+    }
+  });
 
   function checkScrollPosition() {
     $(window).scrollTop() > 450 ? $('#scrollToTop').fadeIn('slow') : $('#scrollToTop').fadeOut('slow');
@@ -16,7 +18,7 @@ $( document ).ready(function() {
   checkScrollPosition(); // check on load
 
   $("#scrollToTop").on("click", function(){
-    window.scrollTo(0,0)
+    $("html").animate({scrollTop: $(".iLinks").offset().top},500);
   });
 
   $("#lArrow").on("click", function(){
