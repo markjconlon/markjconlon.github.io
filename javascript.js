@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   var current = 0;
   var activeSkillDes = "RoR";
-  var pastProjectsIndex = ["pp1", "pp2", "pp3", "pp4"];
+  var pastProjectsIndex = ["pp1", "pp2", "pp3", "pp4", "pp5"];
 
   $("a h2").on("click", function(e){
     if (this.textContent.includes("Projects")) {
