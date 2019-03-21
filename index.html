@@ -1,108 +1,153 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Mark | Web Developer</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="styles/MC.png">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="javascript.js"></script>
-  </head>
-  <body>
-    <div class="background">
-      <div class="iLinks">
-        <a href="#pastProjects"><h2>Past Projects</h2></a>
-        <a href="#skills"><h2>Skills</h2></a>
 
-      </div>
-      <div class="name">
-        <h1>Mark Conlon</h1>
-        <h2>Full-Stack Web Developer</h2>
-      </div>
-      <div class="eLinks">
-        <a href="mailto:markjconlon@gmail.com"><i class="fa fa-envelope" aria-hidden="true"> </i></a>
-        <a href="https://linkedin.com/in/markjconlon" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"> </i></a>
-        <a href="https://github.com/markjconlon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/markjconlon" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-        <a href="https://github.com/markjconlon/resume/blob/master/MC_Web_Dev.pdf" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a>
-        <a href="https://profiles.bitmaker.co/students/mark-conlon" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <title>Mark | Web Developer</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="styles/MC.png">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="javascript.js"></script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-8117049701220979",
+      enable_page_level_ads: true
+    });
+  </script>
+</head>
+
+<body>
+  <div class="background">
+    <div class="iLinks">
+      <a href="#pastProjects">
+        <h2>Past Projects</h2>
+      </a>
+      <a href="#skills">
+        <h2>Skills</h2>
+      </a>
+
+    </div>
+    <div class="name">
+      <h1>Mark Conlon</h1>
+      <h2>Full-Stack Web Developer</h2>
+    </div>
+    <div class="eLinks">
+      <a href="mailto:markjconlon@gmail.com">
+        <i class="fa fa-envelope" aria-hidden="true"> </i>
+      </a>
+      <a href="https://linkedin.com/in/markjconlon" target="_blank">
+        <i class="fa fa-linkedin-square" aria-hidden="true"> </i>
+      </a>
+      <a href="https://github.com/markjconlon" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="https://twitter.com/markjconlon" target="_blank">
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+      </a>
+      <a href="https://github.com/markjconlon/resume/blob/master/MC_Web_Dev.pdf" target="_blank">
+        <i class="fa fa-file" aria-hidden="true"></i>
+      </a>
+      <a href="https://profiles.bitmaker.co/students/mark-conlon" target="_blank">
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+  <div id="scrollToTop"> ^ </div>
+
+  <div id="pastProjects" class="pastProjects">
+    <div id="lArrow" class="Arrow">
+      <img src="styles/lArrow.png" alt="">
     </div>
 
-    <div id="scrollToTop"> ^ </div>
-
-    <div id="pastProjects" class="pastProjects">
-      <div id="lArrow" class="Arrow"><img src="styles/lArrow.png" alt=""></div>
-
-      <div id="pProjects" class="pProjects">
-        <!-- remember to add id's to javascript of any new project -->
-        <div id="pp1" class="pProjectIMG">
-          <a href="https://hoptimal.herokuapp.com/" target="_blank"><img src="styles/Hoptimal.png" alt=""></a>
-          <p>Hoptimal is a beer companion app that allows users to track and rate beers. Through ratings they
-          are given suggestions and the location of bars where they can find that beer! Built on Rails with a team of 4.</p>
-        </div >
-        <div id="pp2" class="pProjectIMG displayNone">
-          <a href="http://www.markjconlon.com/cardShuffler" target="_blank"><img src="styles/cardShuffler.png" alt=""></a>
-          <p>An application required me to write a function to shuffle a deck of cards. This is my visual solution.</p>
-        </div>
-        <div id="pp3" class="pProjectIMG displayNone">
-          <a href="http://www.markjconlon.com/tictactoe" target="_blank"><img src="styles/tictactoe.png" alt=""></a>
-          <p>The first javascript game I wrote and definitely not the last!</p>
-        </div>
-        <div id="pp4" class="pProjectIMG displayNone">
-          <a href="http://www.markjconlon.com/cryptoAggregator" target="_blank"><img src="styles/cryptoAggregator.png" alt=""></a>
-          <p>This makes requests to 3 exchanges APIs (Poloniex, Quadriga and Kraken) on pageload to see if there are any profitable trades between exchanges. This is the initial concept before I wrote a ruby script to see the frequency throughout the day. Long term plan is to make a bot to execute trades for me. </p>
-        </div>
-        <div id="pp5" class="pProjectIMG displayNone">
-          <a href="http://www.markjconlon.com/canvasPong" target="_blank"><img src="styles/canvasPong.png" alt=""></a>
-          <p>My experimentation with game development using HTML5 Canvas. Based on the classic arcade game Pong.</p>
-        </div>
+    <div id="pProjects" class="pProjects">
+      <!-- remember to add id's to javascript of any new project -->
+      <div id="pp1" class="pProjectIMG">
+        <a href="https://hoptimal.herokuapp.com/" target="_blank">
+          <img src="styles/Hoptimal.png" alt="">
+        </a>
+        <p>Hoptimal is a beer companion app that allows users to track and rate beers. Through ratings they are given suggestions
+          and the location of bars where they can find that beer! Built on Rails with a team of 4.</p>
       </div>
-      <div id="rArrow" class="Arrow"><img src="styles/rArrow.png" alt=""></div>
-    </div>
-
-    <div id="skills" class="skills">
-        <p> I'm a fullstack developer who recently graduated from Bitmaker's 9 week immersive boot camp.
-          Seeing as you took the time to visit my site I can assume you are looking for a reason to hire a developer out of the stack of many.
-          You should choose me if you are looking for a developer who is resilient, quickly picks up knowledge as needed and is seasoned working in a fast paced high stress environment.
-          My strengths lay in logic and functionality. I can make pixel perfect matches of designs.
-          Currently I am focussing on being as comfortable in JavaScript as I am in Ruby and using that knowlede to build projects experimenting with design.
-          Although I do love rails development for the speed at which you can assemble an app, I am open to learning new languages and frameworks.
-        </p>
-      <div class="skillsSpecfics">
-        <div id="skill_images" class="skill_images">
-          <img id="html5_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/html5_filled-100.png" title="Html 5 Filled">
-          <img id="ruby_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Ecommerce/ruby_gemstone_filled-100.png" title="Ruby Gemstone Filled">
-          <img id="js_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/javascript_filled-100.png" title="JavaScript Filled">
-          <img id="git_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/git_filled-100.png" title="Git Filled">
-          <img id="css3_img" src="styles/CSS3.png">
-          <img id="rails_img" src="styles/rails-128-black.png">
-          <img id="python_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/python_filled-100.png" title="Python Filled">
-          <img id="sql_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Files/sql_filled-100.png" title="SQL Filled">
-        </div>
-        <p class="skill_images_des" id="skill_images_des">
-          <span id="htmlCss" class="skillDes displayNone">
-            Proficient with HTML5 and CSS3, flexbox is life! Familiar with bootstrap with rails (3.3.6) and with SASS preprocessor.
-          </span>
-          <span id="RoR" class="skillDes">
-            Ruby is a fantastic language and it also happens to be the one I'm most comfortable in. The biggest plus is Rails and its community.
-            If I could change one thing I would require parentheses for function calls, it seems strange that the interpreter looks for a variable
-            and then for a function if it can't find said variable.
-          </span>
-          <span id="javascript" class="skillDes displayNone">
-            Proficient with vanilla JavaScript (ES6), jQuery and AJAX. Familiar with React and JSX as well. I have used react to build the board game battleship.
-          </span>
-          <span id="python" class="skillDes displayNone">
-            Python was the first language I came accross in an elective while at Queen's. More recently I have completed a course from U of T through Coursera.
-            I have not tried any frameworks with Python.
-          </span>
-          <span id="gitSQL" class="skillDes displayNone">
-            I use git for version control and push the majority of my work to Github. I have used PostgreSQL, SQLite3 and I am open to others!
-          </span>
-        </p>
+      <div id="pp2" class="pProjectIMG displayNone">
+        <a href="http://www.markjconlon.com/cardShuffler" target="_blank">
+          <img src="styles/cardShuffler.png" alt="">
+        </a>
+        <p>An application required me to write a function to shuffle a deck of cards. This is my visual solution.</p>
+      </div>
+      <div id="pp3" class="pProjectIMG displayNone">
+        <a href="http://www.markjconlon.com/tictactoe" target="_blank">
+          <img src="styles/tictactoe.png" alt="">
+        </a>
+        <p>The first javascript game I wrote and definitely not the last!</p>
+      </div>
+      <div id="pp4" class="pProjectIMG displayNone">
+        <a href="http://www.markjconlon.com/cryptoAggregator" target="_blank">
+          <img src="styles/cryptoAggregator.png" alt="">
+        </a>
+        <p>This makes requests to 3 exchanges APIs (Poloniex, Quadriga and Kraken) on pageload to see if there are any profitable
+          trades between exchanges. This is the initial concept before I wrote a ruby script to see the frequency throughout
+          the day. Long term plan is to make a bot to execute trades for me. </p>
+      </div>
+      <div id="pp5" class="pProjectIMG displayNone">
+        <a href="http://www.markjconlon.com/canvasPong" target="_blank">
+          <img src="styles/canvasPong.png" alt="">
+        </a>
+        <p>My experimentation with game development using HTML5 Canvas. Based on the classic arcade game Pong.</p>
       </div>
     </div>
-  </body>
+    <div id="rArrow" class="Arrow">
+      <img src="styles/rArrow.png" alt="">
+    </div>
+  </div>
+
+  <div id="skills" class="skills">
+    <p> I'm a fullstack developer who recently graduated from Bitmaker's 9 week immersive boot camp. Seeing as you took the time
+      to visit my site I can assume you are looking for a reason to hire a developer out of the stack of many. You should
+      choose me if you are looking for a developer who is resilient, quickly picks up knowledge as needed and is seasoned
+      working in a fast paced high stress environment. My strengths lay in logic and functionality. I can make pixel perfect
+      matches of designs. Currently I am focussing on being as comfortable in JavaScript as I am in Ruby and using that knowlede
+      to build projects experimenting with design. Although I do love rails development for the speed at which you can assemble
+      an app, I am open to learning new languages and frameworks.
+    </p>
+    <div class="skillsSpecfics">
+      <div id="skill_images" class="skill_images">
+        <img id="html5_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/html5_filled-100.png" title="Html 5 Filled">
+        <img id="ruby_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Ecommerce/ruby_gemstone_filled-100.png" title="Ruby Gemstone Filled">
+        <img id="js_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/javascript_filled-100.png" title="JavaScript Filled">
+        <img id="git_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/git_filled-100.png" title="Git Filled">
+        <img id="css3_img" src="styles/CSS3.png">
+        <img id="rails_img" src="styles/rails-128-black.png">
+        <img id="python_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Logos/python_filled-100.png" title="Python Filled">
+        <img id="sql_img" src="https://maxcdn.icons8.com/iOS7/PNG/100/Files/sql_filled-100.png" title="SQL Filled">
+      </div>
+      <p class="skill_images_des" id="skill_images_des">
+        <span id="htmlCss" class="skillDes displayNone">
+          Proficient with HTML5 and CSS3, flexbox is life! Familiar with bootstrap with rails (3.3.6) and with SASS preprocessor.
+        </span>
+        <span id="RoR" class="skillDes">
+          Ruby is a fantastic language and it also happens to be the one I'm most comfortable in. The biggest plus is Rails and its
+          community. If I could change one thing I would require parentheses for function calls, it seems strange that the
+          interpreter looks for a variable and then for a function if it can't find said variable.
+        </span>
+        <span id="javascript" class="skillDes displayNone">
+          Proficient with vanilla JavaScript (ES6), jQuery and AJAX. Familiar with React and JSX as well. I have used react to build
+          the board game battleship.
+        </span>
+        <span id="python" class="skillDes displayNone">
+          Python was the first language I came accross in an elective while at Queen's. More recently I have completed a course from
+          U of T through Coursera. I have not tried any frameworks with Python.
+        </span>
+        <span id="gitSQL" class="skillDes displayNone">
+          I use git for version control and push the majority of my work to Github. I have used PostgreSQL, SQLite3 and I am open to
+          others!
+        </span>
+      </p>
+    </div>
+  </div>
+</body>
+
 </html>
